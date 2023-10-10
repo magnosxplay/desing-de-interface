@@ -1,0 +1,54 @@
+.image {
+    width: 200px;
+
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+html,
+body {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#nome {
+    font-size: 20px;
+}
+
+.painel {
+    display: flex;
+}
+
+.cartao {
+    width: 19rem;
+    height: 25rem;
+    padding: 1rem;
+    margin: 10rem auto;
+    border-radius: 3rem;
+    border: 6px #9b8989 solid;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cartao2 {
+    width: 35rem;
+    height: 25rem;
+    padding: 1rem;
+    margin: 10rem auto;
+    border-radius: 3rem;
+    border: 6px #9b8989 solid;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    color: white;
+    padding: .3rem 2rem;
+    background-color: blue;
+    border: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
