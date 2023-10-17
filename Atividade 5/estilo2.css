@@ -46,4 +46,99 @@ h3 {
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
+    img {
+        width: 30;
+        height: auto;
+    }
 }
+.cartao3 {
+    width: 400px;
+    height: 30px;
+    padding: 1rem;
+    margin: 10rem auto;
+    border-radius: 3rem;
+    border: 6px #9b8989 solid;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+    img {
+        height: 28rem;
+        width: 25rem;
+        border: 2px red solid;
+        }
+}
+
+.cartao4 {
+    background-color: #665f5f;
+    width: 15rem;
+    height: 15rem;
+    padding: 1rem;
+    margin: 2rem auto;
+    border-radius: 3rem;
+    border: 6px #413131 solid;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    img {
+        width: 30;
+        height: auto;
+    }
+
+
+    
+}
+.cartao5 {
+    background-color: #665f5f;
+    width: 15rem;
+    height: 40rem;
+    padding: 1rem;
+    margin: 2rem auto;
+    border-radius: 3rem;
+    border: 6px #413131 solid;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-display: ;
+    img {
+        width: 30;
+        height: auto;
+    }
+    button {
+        border-radius: 10px; /* Valor do raio do arredondamento das bordas, você pode ajustar conforme necessário. */
+      }
+
+
+
+    
+}
+.cartao6 {
+    background-color: #665f5f;
+    width: 15rem;
+    height: 2rem;
+    padding: 1rem;
+    margin: 2rem auto;
+    border-radius: 3rem;
+    border: 6px #413131 solid;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-display: ;
+    img {
+        width: 30;
+        height: auto;
+    }
+
+
+
+    
+}
+
+
