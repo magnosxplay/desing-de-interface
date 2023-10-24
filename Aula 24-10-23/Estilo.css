@@ -1,0 +1,48 @@
+.painel {
+    display: flex;
+}
+
+.cartao {
+    width: 50rem;
+    height: 200rem;
+    padding: 1rem;
+    margin: 2rem auto;
+
+}
+
+.cartao2 {
+    
+
+
+    text-align: center;
+    width: 55rem;
+    height: auto;
+    padding: 1rem;
+    margin: 2rem auto;
+    background-color: #2b2727;
+    border-radius: 2px;
+
+
+}
+
+.navbar {
+
+    background-color: rgb(59, 52, 52);
+
+
+   
+
+
+}
+.imagem-link {
+    max-width: 400px;
+    /* Largura máxima da imagem */
+    max-height: 300px;
+
+    /* Mantém a proporção de altura automática */
+    object-fit: cover;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
