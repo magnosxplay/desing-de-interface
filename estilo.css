@@ -1,0 +1,88 @@
+.painel {
+    display: flex;
+    text-align: center;
+}
+
+.cartao {
+    width: 10rem;
+    height: 50rem;
+
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.cartao2 {
+    
+
+
+    text-align: center;
+    width: 400rem;
+    height: auto;
+    margin: 2rem auto;
+
+
+}
+
+.navbar {
+
+    background-color: rgb(59, 52, 52);
+
+
+   
+
+
+}
+.imagem-link {
+    max-width: 400px;
+    /* Largura máxima da imagem */
+    max-height: 300px;
+
+    /* Mantém a proporção de altura automática */
+    object-fit: cover;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #fff; /* Cor do link não visitado (branco) */
+    transition: color 0.3s; /* Efeito de transição de cor de 0.3 segundos */
+}
+
+/* Estilos quando o cursor passa sobre o link */
+a:hover {
+    text-decoration: none;
+    color: #ffffff; /* Cor do link quando o mouse passa por cima (laranja) */
+}
+
+/* Estilos para o link visitado */
+a:visited {
+    text-decoration: none;
+    color: #fff; /* Cor do link visitado (branco) */
+}
+
+
+   .pop-button {
+    background-color: #222324;
+    color: #fff;
+    width: 200px;
+    height: 100px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo do botão quando o cursor passa por cima */
+.pop-button:hover {
+    transform: scale(1.1);
+}
