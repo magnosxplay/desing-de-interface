@@ -3,7 +3,7 @@
 }
 
 .cartao {
-    width: 50rem;
+    width: 60rem;
     height: 200rem;
     padding: 1rem;
     margin: 2rem auto;
@@ -15,12 +15,11 @@
 
 
     text-align: center;
-    width: 55rem;
+    width: 235px;
     height: auto;
-    padding: 1rem;
-    margin: 2rem auto;
-    background-color: #2b2727;
-    border-radius: 2px;
+ 
+
+
 
 
 }
@@ -35,9 +34,9 @@
 
 }
 .imagem-link {
-    max-width: 400px;
+    width: 150px;
     /* Largura máxima da imagem */
-    max-height: 300px;
+    max-height: 800px;
 
     /* Mantém a proporção de altura automática */
     object-fit: cover;
@@ -45,4 +44,22 @@
     padding-left: 2px;
     padding-top: 2px;
     padding-bottom: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+.pop-image {
+    width: 235px;
+    /* Largura máxima da imagem */
+    max-height: 800px;
+        /* Mantém a proporção de altura automática */
+        object-fit: cover;
+        padding-right: 2px;
+        padding-left: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo da imagem quando o cursor passa por cima */
+.pop-image:hover {
+    transform: scale(1.2);
 }
