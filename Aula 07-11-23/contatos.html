@@ -26,26 +26,43 @@
             <li><a href="#">Contatos</a></li>
         </ul>
     </nav>
-    <div class="painel">
-        <div class="cartao">
-              <div class="cartao">
+    <div style="display: flex; text-align: center;">
+        <div style="border: 30px; margin-left: 420px;">
+        <div style="text-align: right;">
+
+   
                 <h1>Entre em Contato</h1>
 
                 <div>
                     <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" size="25px" required>
                 </div>
                 <div>
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" size="25px" required>
+                </div>
+                <div>
+                    <label for="tipoComentario">Tipo de Comentário:</label> 
+                    <select name="tipoComentario" style="width: 212px; height: 25px; margin-top: 20;">
+                        <option value="1">Elogio</option>
+                        <option value="2">Crítica</option>
+                        <option value="3">Ajuda</option>
+                    </select>
+                    
+
+                </select>
+
                 </div>
                 <div>
                     <label for="message">Mensagem:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Enviar</button>
+                    <textarea id="message" name="message" required></textarea >
+                    <p></p>
+                    <input type="checkbox" id="" name="">
+                    <label for="">Quero receber mensagens deliciosas</label><br>
+                    <p></p>
+                    <button type="submit">Enviar</button>
             </div>
-
+        </div>
         </div>
     </div>
 </body>

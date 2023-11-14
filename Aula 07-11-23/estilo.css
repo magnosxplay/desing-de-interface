@@ -134,3 +134,31 @@ footer {
     margin-top: 10px;
     padding: 5px;
 }
+#message {
+    width: 213px; /* Define a largura da caixa de texto em pixels */
+    height: 100px;
+    margin-top: 10px;}
+
+#tipoComentario {
+
+  width: 212px; height: 25px;
+  margin-top: 10px;
+}
+
+#email {
+    size="25px"
+    margin-top: 10px;
+
+}
+
+button {
+    background-color: #f858a8; /* Define a cor de fundo como rosa */
+    color: rgb(255, 255, 255); /* Define a cor do texto como branca para contrastar */
+    padding: 10px 20px; /* Adiciona algum preenchimento ao botão para melhor aparência */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas para um visual mais suave */
+    cursor: pointer; /* Adiciona um cursor de ponteiro ao passar o mouse sobre o botão */
+    width: 212px;
+    height: 50px;
+    box-shadow: 2px 2px 5px rgba(32, 14, 14, 0.3);
+}
