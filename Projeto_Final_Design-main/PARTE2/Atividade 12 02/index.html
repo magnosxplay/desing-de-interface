@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movimentar</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <style>
+        html,
+        body {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+
+        main {
+            position: relative;
+            top: 5px;
+            left: 5px;
+            width: 30rem;
+            height: 18.92rem;
+            margin: 8rem auto;
+            border: 2px blue solid;
+            background-image: url("fundo.png");
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        #personagem {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-image: url("charmander.png"); 
+            background-size: cover;
+            animation-name: movimento;
+            animation-duration: 8s;
+            animation-timing-function: cubic-bezier(0.05, 0.76, 0.6, 0.670); 
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+        }
+
+        /* Código da animação: */
+        @keyframes movimento {
+            0% {
+                left: 0px;
+                top: 240px;
+            }
+            10% {
+                left: 40px;
+                top: 240px;
+            }
+            20% {
+                left: 40px;
+                top: 130px;
+            }
+            30% {
+                left: 350px;
+                top: 130px;
+            }
+            40% {
+                left: 350px;
+                top: 30px;
+            }
+            50% {
+                left: 430px;
+                top: 30px;
+            }
+            60% {
+                left: 430px;
+                top: 270px;
+            }
+            70% {
+                left: 170px;
+                top: 270px;
+            }
+            80% {
+                left: 170px;
+                top: 220px;
+            }
+            90% {
+                left: 40px;
+                top: 220px;
+            }
+            100% {
+                left: 40px;
+                top: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="personagem"></div>
+    </main>
+</body>
+
+</html>

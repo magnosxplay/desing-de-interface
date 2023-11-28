@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <title>Calculadora</title>
+  <style>
+    body {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Calculadora</h2>
+
+    <!-- Questão 1 -->
+    <div>
+      <h4>1. Calcular Idade</h4>
+      <label for="anoNascimento">Ano de Nascimento:</label>
+      <input type="number" id="anoNascimento" class="form-control" placeholder="Digite o ano de nascimento">
+
+      <label for="anoAtual">Ano Atual:</label>
+      <input type="number" id="anoAtual" class="form-control" placeholder="Digite o ano atual">
+
+      <button onclick="calcularIdade()" class="btn btn-primary mt-2">Calcular</button>
+
+      <p id="idadeAtual"></p>
+      <p id="idade2050"></p>
+    </div>
+
+    <!-- Questão 2 -->
+    <div class="mt-4">
+      <h4>2. Calcular Novo Salário</h4>
+      <label for="salarioAtual">Salário Atual:</label>
+      <input type="number" id="salarioAtual" class="form-control" placeholder="Digite o salário atual">
+
+      <button onclick="calcularNovoSalario()" class="btn btn-primary mt-2">Calcular</button>
+
+      <p id="novoSalario"></p>
+    </div>
+
+    <!-- Questão 3 -->
+    <div class="mt-4">
+      <h4>3. Converter Temperatura</h4>
+      <label for="tempCelsius">Temperatura em Celsius para Fahrenheit:</label>
+      <input type="number" id="tempCelsius" class="form-control" placeholder="Digite a temperatura em Celsius">
+
+      <button onclick="converterTemperatura()" class="btn btn-primary mt-2">Converter</button>
+
+      <p id="tempFahrenheit"></p>
+    </div>
+
+    <!-- Questão 4 -->
+    <div class="mt-4">
+      <h4>4. Calcular Média</h4>
+      <label for="nota1">Nota 1:</label>
+      <input type="number" id="nota1" class="form-control" placeholder="Digite a nota 1">
+
+      <label for="nota2">Nota 2:</label>
+      <input type="number" id="nota2" class="form-control" placeholder="Digite a nota 2">
+
+      <label for="nota3">Nota 3:</label>
+      <input type="number" id="nota3" class="form-control" placeholder="Digite a nota 3">
+
+      <button onclick="calcularMedia()" class="btn btn-primary mt-2">Calcular</button>
+
+      <p id="media"></p>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="mt-4">
+      <h4>5. Calcular Hipotenusa</h4>
+      <label for="cateto1">Cateto 1:</label>
+      <input type="number" id="cateto1" class="form-control" placeholder="Digite o valor do cateto 1">
+
+      <label for="cateto2">Cateto 2:</label>
+      <input type="number" id="cateto2" class="form-control" placeholder="Digite o valor do cateto 2">
+
+      <button onclick="calcularHipotenusa()" class="btn btn-primary mt-2">Calcular</button>
+
+      <p id="hipotenusa"></p>
+    </div>
+
+    <!-- Questão 6 -->
+    <div class="mt-4">
+      <h4>6. Calcular Propriedades da Esfera</h4>
+      <label for="raio">Raio da Esfera:</label>
+      <input type="number" id="raio" class="form-control" placeholder="Digite o raio da esfera">
+
+      <button onclick="calcularEsfera()" class="btn btn-primary mt-2">Calcular</button>
+
+      <p id="comprimento"></p>
+      <p id="area"></p>
+      <p id="volume"></p>
+    </div>
+  </div>
+
+  <script>
+    // Funções para as operações
+    function calcularIdade() {
+      const anoNascimento = document.getElementById("anoNascimento").value;
+      const anoAtual = document.getElementById("anoAtual").value;
+
+      const idadeAtual = anoAtual - anoNascimento;
+      const idade2050 = 2050 - anoNascimento;
+
+      document.getElementById("idadeAtual").innerHTML = `Idade no ano atual: ${idadeAtual} anos`;
+      document.getElementById("idade2050").innerHTML = `Idade em 2050: ${idade2050} anos`;
+    }
+
+    function calcularNovoSalario() {
+      const salarioAtual = document.getElementById("salarioAtual").value;
+      const novoSalario = salarioAtual * 1.25; // Aumento de 25%
+
+      document.getElementById("novoSalario").innerHTML = `Novo salário: ${novoSalario.toFixed(2)}`;
+    }
+
+    function converterTemperatura() {
+      const tempCelsius = document.getElementById("tempCelsius").value;
+      const tempFahrenheit = (tempCelsius * 1.8) + 32;
+
+      document.getElementById("tempFahrenheit").innerHTML = `Temperatura em Fahrenheit: ${tempFahrenheit.toFixed(2)} °F`;
+    }
+
+    function calcularMedia() {
+      const nota1 = parseFloat(document.getElementById("nota1").value);
+      const nota2 = parseFloat(document.getElementById("nota2").value);
+      const nota3 = parseFloat(document.getElementById("nota3").value);
+
+      const media = (nota1 + nota2 + nota3) / 3;
+
+      document.getElementById("media").innerHTML = `Média: ${media.toFixed(2)}`;
+    }
+
+    function calcularHipotenusa() {
+      const cateto1 = parseFloat(document.getElementById("cateto1").value);
+      const cateto2 = parseFloat(document.getElementById("cateto2").value);
+
+      const hipotenusa = Math.sqrt(cateto1 ** 2 + cateto2 ** 2);
+
+      document.getElementById("hipotenusa").innerHTML = `Hipotenusa: ${hipotenusa.toFixed(2)}`;
+    }
+
+    function calcularEsfera() {
+      const raio = parseFloat(document.getElementById("raio").value);
+
+      const comprimento = 2 * Math.PI * raio;
+      const area = Math.PI * raio ** 2;
+      const volume = (3 / 4) * Math.PI * raio ** 3;
+
+document.getElementById("comprimento").innerHTML = `Comprimento da esfera: ${comprimento.toFixed(2)}`;
+document.getElementById("area").innerHTML = `Área da esfera: ${area.toFixed(2)}`;
+document.getElementById("volume").innerHTML = `Volume da esfera: ${volume.toFixed(2)}`;
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
